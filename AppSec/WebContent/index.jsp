@@ -2,7 +2,7 @@
    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-   <script>
+   <script type="text/javascript">
       function check(field){
          if(field = name)
             var x = document.getElementbyId("username");
@@ -19,7 +19,7 @@
             alert("Hey there, are you using SQLInjection? Please do not");
             x.value = '';
     }
-});
+}
 </script>
    <head>
       <meta charset="UTF-8">
@@ -36,11 +36,11 @@
          <table border="0">
             <tr>
                <td>Username</td>
-               <td><input type="text" name="username" id="username" value= "${user.username}" onchange="check("name");" onkeypress="this.onchange(); onpaste="this.onchange()" oninput="this.onchange()"/> </td>
+               <td><input type="text" name="username" id="username" value= "${user.username}" onchange="check("name");" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/> </td>
             </tr>
             <tr>
                <td>Password</td>
-               <td><input type="password" name="password" id="password" value= "${user.password}" onchange="check("pass");" onkeypress="this.onchange(); onpaste="this.onchange()" oninput="this.onchange()"/> </td>
+               <td><input type="password" name="password" id="password" value= "${user.password}" onchange="check("pass");" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/> </td>
             </tr>
            
             <tr>
